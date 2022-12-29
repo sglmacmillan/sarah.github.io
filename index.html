@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wedding Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+<style>
+body,h1,h2{font-family: "Caveat", sans-serif}
+body, html {
+  height: 100%;
+  scroll-behavior:smooth;
+}
+p {line-height: 2}
+.bgimg, .bgimg5{
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  background-attachment: fixed;
+}
+
+.bgimg2, .bgimg3, .bgimg4 {
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+
+/* Media query to remove parallax and help responsive media */
+@media(max-width:568px){
+  .bgimg, .bgimg2, .bgimg3, .bgimg4, .bgimg5{
+      background-attachment:scroll;
+  }
+}
+
+.bgimg {background-image: url('../Wedding\ Website/img/image1.jpg')}
+.bgimg2 {background-image: url('../Wedding\ Website/img/image2.jpg')}
+.bgimg3 {background-image: url('../Wedding\ Website/img/image3.jpg')}
+.bgimg4 {background-image: url('../Wedding\ Website/img/image4.jpg')}
+.bgimg5 {background-image: url('../Wedding\ Website/img/image5.jpg')}
+</style>
+</head>
+<body>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">John & Emily</h1>
+    <h2>Are getting married</h2>
+    <h2><b>06.09.2025</b></h2>
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button">John & Emily</a>
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
+    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+  </div>
+</div>
+
+<!-- About / John And Emily -->
+<div class="w3-container w3-padding-64 w3-pale-red" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>John & Emily</b></h1>
+    <img class="w3-round" src="https://images.unsplash.com/photo-1528855275993-0f4a23fedd62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="width:100%;margin:32px 0;opacity:0.80;">
+    <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.</i>
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg3">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">You Are Invited</h1><br>
+    <h2>Of course..</h2>
+  </div>
+</div>
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
+    <img class="w3-round-large" src="https://img.tagvenue.com/resize/07/31/widen-1680-noupsize;22928-the-orangery-room.jpg" style="width:100%;margin:64px 0;opacity:0.80;">
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>When</h2>
+        <p>Wedding Ceremony - 2:00pm</p>
+        <p>Reception & Dinner - 5:00pm</p>
+      </div>
+      <div class="w3-half">
+        <h2>Where</h2>
+        <p>De Vere Tortworth Court</p>
+        <p>Tortworth, Wotton-under-Edge, Gloucestershire, GL12 8HH</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2">
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+  <h1>WE HOPE YOU CAN MAKE IT!</h1>
+  <p class="w3-large">Please kindly respond by 31st January 2025</p>
+  <p class="w3-xlarge">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWUhzKgjtYU5whnv003kbqzYjzl7MpYng6pUiWy1HLghpt_w/viewform?embedded=true" width="100%" height="auto" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </p>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg5">
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Made with ♥ by Sarah &copy; MMXXII | All rights Reserved</p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
